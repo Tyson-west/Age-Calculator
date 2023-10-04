@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <form action="">
+                <div class="input-box">
+                    <label for="">DAY</label>
+                    <input type="number" name="" id="day" placeholder="DD">
+
+                    <div class="stroke">This field is required</div>
+                    <div class="valid message"> Must be a valid date</div>
+                </div>
+                <div class="input-box">
+                    <label for="">MONTH</label>
+                    <input type="number" name="" id="month" placeholder="MM">
+                    <div class="stroke1">This field is required</div>
+                    <div class="valid1 message"> Must be a valid month</div>
+                </div>
+                <div class="input-box">
+                    <label for="">YEAR</label>
+                    <input type="number" name="" id="year" placeholder="YYYY">
+                    <div class="stroke2">This field is required</div>
+                    <div class="valid2 message"> Must be a valid year</div>
+                </div>
+                <button class="net-age" type="submit">
+                    <img src="./assets/images/icon-arrow.svg" alt="">
+                </button>
+                <!-- <button class="actual-age" type="submit">
+                    <img src="./assets/images/icon-arrow.svg" alt="">
+                </button> -->
+            </form>
+        </div>
+        <!-- <hr> -->
+
+        <div class="answer">
+      <div class="answer-child">
+        <div class="answer-div "><h1 class="figure years">--</h1>
+            <h1>years</h1> 
+        </div>
+        <div class="answer-div"><h1 class="figure months">--</h1>
+            <h1>months</h1> 
+        </div>
+        <div class="answer-div"><h1 class="figure days">--</h1>
+            <h1>days</h1> 
+        </div>
+      </div>    
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

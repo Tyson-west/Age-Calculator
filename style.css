@@ -1,0 +1,373 @@
+@font-face {
+    font-family: myFont;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: myFont;
+    background-color: hsl(0, 0%, 94%);
+    
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width:650px;
+    height: 550px;
+    border-radius: 15px 15px 120px 15px;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-section form{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.input-section form input{
+    padding:15px;
+    background-color: inherit;
+    width: 7rem;
+    outline: none;
+    border: none;
+    border: 1px solid hsl(0, 1%, 66%);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+}
+
+.stroke{
+display: none;
+color: red;
+position: absolute;
+top: 131px;
+right: 33rem;
+display:none;
+
+}
+.stroke1{
+    display:none;
+    color: red;
+    position: absolute;
+    top: 131px;
+    right: 25rem;
+    display:none;
+    
+}
+.stroke2{
+        display: none;
+        color: red;
+        position: absolute;
+        top: 131px;
+        right: 17rem;
+        display:none;
+        
+}
+
+.valid{
+    display: none;
+    color: red;  
+    position: absolute;
+    top: 131px;
+    
+}
+.valid1{
+    display: none;
+    color: red; 
+    position: absolute;
+    top: 131px; 
+}
+.valid2{
+    display: none;
+    color: red; 
+    position: absolute;
+    top: 131px; 
+}
+
+.net-age{
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    padding:12px;
+    position: absolute;
+    top: 8rem;
+    right: 2rem;
+    cursor: pointer;
+}
+.net-age:hover{
+    background-color: black;
+}
+
+.actual-age{
+    background-color: rgb(30, 30, 206);
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    padding:12px;
+    position: absolute;
+    top: 15rem;
+    right: 2rem;
+    transform: rotate(180deg);
+}
+
+::placeholder{
+    color: hsl(0, 1%, 44%);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+
+.answer{
+border-top: 1px solid hsl(0, 1%, 66%);
+margin-top: 3rem;
+width: 34.375rem;
+padding: 20px;
+}
+
+.answer-div{
+    display: flex;
+}
+
+.answer-child{
+    margin-top: 20px;
+}
+
+h1{
+    display: inline;
+    font-weight: 900;
+    font-size: 70px;
+    margin: 0;
+    font-style: italic;
+}
+
+.figure{
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 8px;
+
+}
+
+@media (max-width: 750px) {
+    body{
+        align-items: start;
+        
+    }
+    .container{
+        width: 300px;
+        height: 400px;
+        padding: 10px;
+        margin-top: 70px;
+        padding-top: 30px;
+    }
+    form{
+        max-width: 10%;
+    }
+    .input-section form input{
+        max-width: 4rem;
+        padding: 8px;
+        font-size: 15px;
+        font-weight: 900;
+        cursor: pointer;
+        position: relative;
+    }
+    label{
+        font-size: 9px;
+    }
+    
+.stroke{
+    display: none;
+    color: red;
+    position: absolute;
+    top: 100px;
+    right: 14rem;
+    display:none;
+    font-size: 7px;
+    }
+    .stroke1{
+        display:none;
+        color: red;
+        position: absolute;
+        top: 100px;
+        right: 9rem;
+        display:none;
+        font-size: 7px;
+    }
+    .stroke2{
+            display: none;
+            color: red;
+            position: absolute;
+            top: 100px;
+            right: 4rem;
+            font-size: 7px;  
+    }
+    
+    .valid{
+        display: none;
+        color: red;  
+        position: absolute;
+        top: 100px;
+        font-size: 8px;
+        
+    }
+    .valid1{
+        display: none;
+        color: red; 
+        position: absolute;
+        top: 100px;
+        font-size: 8px;
+    }
+    .valid2{
+        display: none;
+        color: red; 
+        position: absolute;
+        top: 100px; 
+        font-size: 8px;
+    }
+
+    .answer{
+        border-top: 1px solid hsl(0, 1%, 66%);
+        margin-top: 2rem;
+        max-width: 16rem;
+        padding: 10px;
+        margin-top: 50px;
+        }
+       
+        h1{
+            font-size: 29px;
+        }
+
+        .net-age{
+            padding: 7px;
+            right: 9rem;
+            top: 7.10rem;
+        }
+        .net-age > img{
+            width: 20px;
+        }
+
+        ::placeholder{
+            font-size: 14px;
+        }
+}
+
+@media (max-width:510px) {
+    .container{
+        width: 260px;
+        height: 350px;
+        padding: 10px;
+        margin-top: 50px;
+        padding-top: 30px;
+    }
+    /* form{
+        max-width: 10%;
+    } */
+    .input-section form input{
+        max-width: 4rem;
+        padding: 5px;
+        font-size: 15px;
+        font-weight: 900;
+        cursor: pointer;
+        position: relative;
+    }
+    label{
+        font-size: 9px;
+    }
+    
+.stroke{
+    display: none;
+    color: red;
+    position: absolute;
+    top: 100px;
+    right: 11.3rem;
+    font-size: 7px;
+    }
+    .stroke1{
+        display:none;
+        color: red;
+        position: absolute;
+        top: 100px;
+        right: 6.5rem;
+        font-size: 7px;
+    }
+    .stroke2{
+            display: none;
+            color: red;
+            position: absolute;
+            top: 100px;
+            right: 1.8rem;
+            font-size: 7px;  
+    }
+    
+    .valid{
+        display: none;
+        color: red;  
+        position: absolute;
+        top: 100px;
+        font-size: 7px;
+        
+    }
+    .valid1{
+        display: none;
+        color: red; 
+        position: absolute;
+        top: 100px; 
+        font-size: 7px;
+    }
+    .valid2{
+        display: none;
+        color: red; 
+        position: absolute;
+        top: 100px; 
+        font-size: 7px;
+    }
+
+    .answer{
+        border-top: 1px solid hsl(0, 1%, 66%);
+        margin-top: 2rem;
+        max-width: 14rem;
+        padding: 10px;
+        margin-top: 50px;
+        }
+
+        h1{
+            font-size: 30px;
+        }
+
+        .net-age{
+            padding: 7px;
+            right: 7.9rem;
+            top: 7.5rem;
+        }
+        .net-age > img{
+            width: 20px;
+        }
+
+        ::placeholder{
+            font-size: 13px;
+        }
+}
